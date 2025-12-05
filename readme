@@ -184,8 +184,8 @@ CREATE TABLE movies (
 1. **Clone ou baixe o projeto**
    ```bash
    cd htdocs/
-   git clone https://github.com/seu-usuario/Cliq_XAMPP.git
-   cd Cliq_XAMPP
+   git clone https://github.com/OGoncalez/Cliq
+   cd Cliq
    ```
 
 2. **Crie o banco de dados**

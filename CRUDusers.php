@@ -166,7 +166,7 @@ function createSubscription($pdo) {
     
     // Define preços dos planos
     $precos = [
-        'Padrão' => 24.99,
+        'Padrão' => 29.99,
         'Super' => 49.99,
         'VIP' => 69.99
     ];
@@ -201,7 +201,7 @@ function updateSubscription($pdo) {
     
     // Define preços dos planos
     $precos = [
-        'Padrão' => 24.99,
+        'Padrão' => 29.99,
         'Super' => 49.99,
         'VIP' => 69.99
     ];
@@ -404,7 +404,7 @@ $users = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <div class="form-group">
       <label for="plano">Plano:</label>
       <select id="plano" name="plano" required>
-        <option value="Padrão">Padrão - R$ 24,99</option>
+        <option value="Padrão">Padrão - R$ 29,99</option>
         <option value="Super">Super - R$ 49,99</option>
         <option value="VIP">VIP - R$ 69,99</option>
       </select>

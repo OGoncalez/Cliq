@@ -34,7 +34,7 @@ $plan = isset($_GET['plan']) ? $_GET['plan'] : 'padrao';
 
 // Define plan details
 $plans = [
-    'padrao' => ['name' => 'Padrão', 'price' => 'R$24,99'],
+    'padrao' => ['name' => 'Padrão', 'price' => 'R$29,99'],
     'super' => ['name' => 'Super', 'price' => 'R$49,99'],
     'vip' => ['name' => 'VIP', 'price' => 'R$69,99']
 ];
@@ -93,7 +93,7 @@ $selectedPlan = isset($plans[$plan]) ? $plans[$plan] : $plans['padrao'];
                     <label for="plan">Plano:</label>
                     <select id="plan" name="plan" required>
                         <option value="padrao" <?php echo $plan === 'padrao' ? 'selected' : ''; ?>>
-                            Padrão - R$24,99
+                            Padrão - R$29,99
                         </option>
                         <option value="super" <?php echo $plan === 'super' ? 'selected' : ''; ?>>
                             Super - R$49,99

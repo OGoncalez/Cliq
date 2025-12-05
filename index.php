@@ -22,7 +22,7 @@
                 <img src="midias\LOGO CLIQ DEFINITIVA.png" alt="CLIQ Logo" class="logogrande">
             </div>
             
-            <h1 class="pricing-text">Planos a partir de R$ 24,99</h1>
+            <h1 class="pricing-text">Planos a partir de R$ 29,99</h1>
             
        <a href="planos.php" class="cta-button">Assine agora</a>
         </div>

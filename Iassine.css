@@ -6,8 +6,9 @@
 
 body {
   min-height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)),
-    url("https://cdn.pixabay.com/photo/2019/02/27/08/46/theater-4023586_1280.jpg") !important;
+  min-width: 100vw;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+  url("https://cdn.pixabay.com/photo/2019/02/27/08/46/theater-4023586_1280.jpg") !important;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;

@@ -3,6 +3,13 @@ require_once 'session.php';
 require_once 'flash.php';
 require 'conexao.php'; // Sua conexão com MySQL
 
+if (!function_exists('is_admin') || !is_admin()) {
+    $userId = $_SESSION['usuario']['id'] ?? null;
+    if ($userId === null) {
+        header('Location: login.php');
+        exit;
+    }
+    
 // Verificar autenticação
 if (empty($_SESSION['usuario'])) {
     $_SESSION['redirect_after_login'] = $_SERVER['REQUEST_URI'] ?? '/home.php';
@@ -15,13 +22,7 @@ if (empty($_SESSION['perfil_ativo'])) {
     exit;
 }
 
-// Verificar assinatura ativa — se não for admin, exigir assinatura
-if (!function_exists('is_admin') || !is_admin()) {
-    $userId = $_SESSION['usuario']['id'] ?? null;
-    if ($userId === null) {
-        header('Location: login.php');
-        exit;
-    }
+// Verificar assinatura ativa — se não for admin, exigir assinatur
 
     try {
         $stmt = $conn->prepare("SELECT 1 FROM assinaturas WHERE usuario_id = ? AND status = 'ativa' LIMIT 1");
