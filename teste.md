@@ -1,17 +1,3 @@
-
-### **2. Onde vai funcionar**
-
-✅ **GitHub/GitLab**: Renderiza automaticamente [citation:1]
-✅ **VS Code**: Com extensão "Markdown Preview Mermaid Support" [citation:6]
-✅ **Notion**: Suporte nativo a Mermaid
-✅ **Observable**: Suporte integrado
-✅ **MkDocs**: Com configuração adequada [citation:5]
-
-## **VERSÃO COMPLETA DO SEU DER PARA .MD**
-
-Aqui está o código completo do seu Diagrama Entidade-Relacionamento pronto para copiar e colar no arquivo `.md`:
-
-```markdown
 # Diagrama Entidade-Relacionamento - SOUL System
 
 ```mermaid
