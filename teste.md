@@ -42,8 +42,8 @@ erDiagram
         varchar(50) subcategoria
         varchar(100) marca
         varchar(10) unidade_medida
-        decimal(10,3) peso_unitario
-        decimal(10,3) volume_unitario
+        decimal(10.3) peso_unitario
+        decimal(10.3) volume_unitario
         int estoque_minimo
         int estoque_maximo
         decimal(10,2) preco_custo_medio
